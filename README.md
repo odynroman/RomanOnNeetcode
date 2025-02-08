@@ -1,7 +1,7 @@
 # RomanOnNeetcode
 These are my solutions for Neetcode 150 problems using Java. 
 
-The exercises are located here: https://neetcode.io/practice?tab=neetcode150
+The descriptions of exercises are located here: https://neetcode.io/practice?tab=neetcode150
 
 ## Requirements
 - Java 17
