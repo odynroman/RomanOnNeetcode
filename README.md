@@ -38,13 +38,13 @@ Map.of(...)
 ```
 interface Stream<T> {
 
-    IntStream mapToInt(ToIntFunction<? super T> mapper); // Returns IntStream
+    IntStream mapToInt(ToIntFunction<? super T> mapper);    // Returns IntStream
     
-    Object[] toArray(); // Returns an array containing the elements of this stream
+    Object[] toArray();                                     // Returns an array containing the elements of this stream
     
     Stream<T> sorted(Comparator<? super T> comparator);
     
-    Stream<T> limit(long maxSize); // Returns the new stream with limited number of elements
+    Stream<T> limit(long maxSize);                          // Returns the new stream with limited number of elements
 }
 ```
 
