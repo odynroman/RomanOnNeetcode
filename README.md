@@ -19,6 +19,7 @@ interface Map<K, V> {
     Set<K> keySet();                    //Returns a set view of the keys contained in this map
     
     Collection<V> values();             //Returns a collection view of the values contained in this map
+}
 ```
 
 ### Stream
@@ -63,3 +64,27 @@ interface IntStream {
 }
 ```
 
+### Queue
+
+```
+ interface Queue<E> {
+    
+    boolean add(E e);   // Inserts the specified element into this queue if it is possible to do so immediately without violating capacity restrictions.
+   
+    E poll();           // Retrieves and removes the head of this queue, or returns null if this queue is empty.
+      
+    E peek();           // Retrieves, but does not remove, the head of this queue, or returns null if this queue is empty.
+ }
+```
+
+### Priority queue
+
+#### Characteristics of a Priority Queue
+A priority queue is an extension of a queue that contains the following characteristics:
+
+Every element in a priority queue has a priority value associated with it. 
+The element with the higher priority will be moved to the top and removed first. 
+If two elements in a priority queue have the same priority value, they’ll be arranged using the FIFO principle.
+
+Java implementation of the priority queue is based on a priority heap. 
+This implementation provides O(log(n)) time for the enqueuing and dequeuing methods (offer, poll, remove and add); linear time for the remove and contains methods; and constant time for the retrieval methods (peek, element, and size).
