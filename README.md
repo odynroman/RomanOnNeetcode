@@ -22,6 +22,17 @@ interface Map<K, V> {
 }
 ```
 
+### Set
+```
+interface Set<E> extends Collection<E> {
+    
+    boolean contains(Object o); // Returns true if this set contains the specified element.
+    
+    boolean isEmpty();
+}
+```
+
+
 ### Stream
 Example of usage...
 ```
@@ -67,7 +78,7 @@ interface IntStream {
 ### Queue
 
 ```
- interface Queue<E> {
+ interface Queue<E> extends Collection<E> {
     
     boolean add(E e);   // Inserts the specified element into this queue if it is possible to do so immediately without violating capacity restrictions.
    
