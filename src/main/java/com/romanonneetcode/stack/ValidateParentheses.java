@@ -41,6 +41,4 @@ public class ValidateParentheses {
         ValidateParentheses solution = new ValidateParentheses();
         System.out.println(solution.isValid("[]"));
     }
-
-
 }
